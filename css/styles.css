@@ -14,7 +14,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--brand-color);
 }
-
+/* 
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -23,11 +23,11 @@ body {
   color: var(--black-color);
 }
 
-.logoweb {
+.logo__web {
   color: var(--focus-color);
 }
 
-.nav-list-item {
+.nav-list__item {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -36,7 +36,7 @@ body {
   color: var(--brand-color);
 }
 
-.nav-list-item-link {
+.nav-list__link {
   color: var(--brand-color);
   text-decoration: none;
   transition-property: color;
@@ -44,16 +44,16 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list-item-link:hover,
-.nav-list-item-link:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
   color: var(--focus-color);
   text-decoration: none;
 }
-.is-active {
+.nav-list--active {
   position: relative;
   color: var(--focus-color);
 }
-.is-active::after {
+.nav-list--active::after {
   content: '';
   display: block;
   position: absolute;
@@ -62,8 +62,8 @@ body {
   top: 44px;
   background-color: var(--focus-color);
   border-radius: 2px;
-}
-.contact-links {
+} */
+.contact-box__links {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -79,19 +79,19 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-links:hover,
-.contact-links:focus {
+.contact-box__links:hover,
+.contact-box__links:focus {
   color: var(--focus-color);
   text-decoration: none;
 }
-.contact-links-svg {
+.contact-box__icon {
   fill: var(--secondary-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-links:hover > .contact-links-svg,
-.contact-links:focus > .contact-links-svg {
+.contact-box__links:hover > .contact-box__icon,
+.contact-box__links:focus > .contact-box__icon {
   fill: var(--focus-color);
 }
 .page-title {
@@ -248,7 +248,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-.main-nav-box {
+.header-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
