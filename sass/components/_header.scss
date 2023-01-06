@@ -49,21 +49,21 @@
       color: $focus-color;
       text-decoration: none;
     }
-  }
 
-  &--active {
-    position: relative;
-    color: $focus-color;
+    &--active {
+      position: relative;
+      color: $focus-color;
 
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 53px;
-      height: 4px;
-      top: 44px;
-      background-color: $focus-color;
-      border-radius: 2px;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 53px;
+        height: 4px;
+        top: 44px;
+        background-color: $focus-color;
+        border-radius: 2px;
+      }
     }
   }
 }

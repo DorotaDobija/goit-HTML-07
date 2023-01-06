@@ -24,6 +24,20 @@ body {
   list-style-type: none;
 }
 
+.btn {
+  background-color: #2196f3;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .site-nav {
   border-bottom: 1px solid #ececec;
 }
@@ -91,11 +105,11 @@ body {
   color: #2196f3;
   text-decoration: none;
 }
-.nav-list--active {
+.nav-list__link--active {
   position: relative;
   color: #2196f3;
 }
-.nav-list--active::after {
+.nav-list__link--active::after {
   content: "";
   display: block;
   position: absolute;
@@ -151,4 +165,52 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title {
+  background-color: #2f303a;
+}
+.title__box {
+  max-width: 1600px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/backgroundpic.jpg");
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgroundpic.jpg");
+  background-position: center;
+  margin: 0 auto;
+}
+.title__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  padding: 200px 0;
+}
+.title__text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.page-title--btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px 41px 10px 42px;
 }/*# sourceMappingURL=main.min.css.map */
