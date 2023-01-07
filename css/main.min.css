@@ -797,4 +797,88 @@ body {
           box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.grid-box {
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.grid-box * {
+  display: block;
+}
+.grid-box:hover {
+  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.grid-box:hover .grid-box__overlay {
+  -webkit-transform: translatex(0);
+          transform: translatex(0);
+}
+.grid-box__image {
+  position: relative;
+  overflow: hidden;
+}
+.grid-box__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  -webkit-transform: translatey(100%);
+          transform: translatey(100%);
+  -webkit-transition: -webkit-transform 250ms ease;
+  transition: -webkit-transform 250ms ease;
+  transition: transform 250ms ease;
+  transition: transform 250ms ease, -webkit-transform 250ms ease;
+}
+.grid-box__descripion {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  padding: 49px 45px 49px 45px;
+}
+.grid-box__caption {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.grid-box__caption--major {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  margin-bottom: 4px;
+}
+.grid-box__caption--secondary {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+  padding: 0 24px 20px;
 }/*# sourceMappingURL=main.min.css.map */
