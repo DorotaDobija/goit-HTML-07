@@ -95,11 +95,11 @@
     }
     &:hover > .contact-box__icon,
     &:focus > .contact-box__icon {
-      fill: var(--focus-color);
+      fill: $focus-color;
     }
   }
   &__icon {
-    fill: var(--secondary-color);
+    fill: $secondary-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
