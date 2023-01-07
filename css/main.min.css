@@ -137,7 +137,17 @@ body {
   padding-bottom: 32px;
   gap: 50px;
 }
-.contact-box__links {
+.contact-box__icon {
+  fill: #757575;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-links {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -159,21 +169,12 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-box__links:hover, .contact-box__links:focus {
+.contact-links:hover, .contact-links:focus {
   color: #2196f3;
   text-decoration: none;
 }
-.contact-box__links:hover > .contact-box__icon, .contact-box__links:focus > .contact-box__icon {
+.contact-links:hover > .contact-box__icon, .contact-links:focus > .contact-box__icon {
   fill: #2196f3;
-}
-.contact-box__icon {
-  fill: #757575;
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title {
@@ -211,17 +212,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.page-title--btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: 10px 41px 10px 42px;
 }
 
 .text-list {
@@ -408,4 +398,126 @@ body {
 .client-box__logo:hover, .client-box__logo:focus {
   fill: #2196f3;
   border-color: #2196f3;
+}
+
+.footer-section {
+  background-color: #2f303a;
+}
+.footer-section__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: space-between;
+  gap: 70px;
+}
+
+.footer-logo {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  color: #000000;
+}
+.logo__web {
+  color: #2196f3;
+}
+
+.page-footer-logo {
+  color: #ffffff;
+}
+
+.contact-list {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-bottom: 60px;
+}
+
+.footer-contacts {
+  margin-bottom: 9px;
+}
+
+.footer-header {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer-icons {
+  padding-top: 72px;
+}
+.footer-icons__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 100px;
+  padding-top: 20px;
+  gap: 10px;
+}
+.footer-icons__wrapper {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-icons__wrapper:hover, .footer-icons__wrapper:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+.footer-icons__svg {
+  fill: #ffffff;
+}
+
+.newsletter {
+  padding-top: 72px;
+}
+.newsletter__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+.newsletter__input {
+  width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+}
+.newsletter__input:focus {
+  outline: 0;
+}
+.newsletter__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
 }/*# sourceMappingURL=main.min.css.map */

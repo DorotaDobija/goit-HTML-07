@@ -73,35 +73,35 @@
   padding-bottom: 32px;
   gap: 50px;
 
-  &__links {
-    font-family: $main-font-family;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: $secondary-color;
-    text-decoration: none;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      color: $focus-color;
-      text-decoration: none;
-    }
-    &:hover > .contact-box__icon,
-    &:focus > .contact-box__icon {
-      fill: $focus-color;
-    }
-  }
   &__icon {
     fill: $secondary-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.contact-links {
+  font-family: $main-font-family;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: $secondary-color;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $focus-color;
+    text-decoration: none;
+  }
+  &:hover > .contact-box__icon,
+  &:focus > .contact-box__icon {
+    fill: $focus-color;
   }
 }
