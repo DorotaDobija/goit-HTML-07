@@ -33,7 +33,7 @@ body {
   margin-bottom: 50px;
 }
 
-.btn {
+.modal-form__button, .newsletter__button, .title__button {
   background-color: #2196f3;
   color: #ffffff;
   font-size: 16px;
@@ -211,7 +211,6 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-
 .text-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,7 +505,7 @@ body {
 .newsletter__input:focus {
   outline: 0;
 }
-.newsletter__button {
+.newsletter__button-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,15 +688,6 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__button {
-  width: 200px;
-  height: 50px;
-  background-color: #2196f3;
-  border-radius: 4px;
-  border: none;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
   margin: 0 auto;
 }
 

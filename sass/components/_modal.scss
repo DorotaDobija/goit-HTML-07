@@ -124,15 +124,7 @@
   }
 
   &__button {
-    width: 200px;
-    height: 50px;
-    background-color: $focus-color;
-    border-radius: 4px;
-    border: none;
-    color: $white-color;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.06em;
+    @extend %button;
     margin: 0 auto;
   }
 }

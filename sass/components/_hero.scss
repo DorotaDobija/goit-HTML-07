@@ -27,4 +27,8 @@
     text-transform: uppercase;
     color: $white-color;
   }
+
+  &__button {
+    @extend %button;
+  }
 }

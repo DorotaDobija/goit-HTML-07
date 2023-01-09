@@ -96,6 +96,10 @@
   }
 
   &__button {
+    @extend %button;
+  }
+
+  &__button-box {
     display: flex;
     justify-content: center;
     align-items: center;
