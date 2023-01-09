@@ -63,15 +63,6 @@ body {
           align-items: center;
 }
 
-.nav-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -83,7 +74,15 @@ body {
   color: #2196f3;
 }
 
-.nav-list {
+.nav-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-box__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +91,7 @@ body {
   padding-bottom: 32px;
   margin-left: 93px;
 }
-.nav-list__item {
+.nav-box__list-item {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -100,7 +99,7 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.nav-list__link {
+.nav-box__list-link {
   color: #212121;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -110,15 +109,15 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-list__link:hover, .nav-list__link:focus {
+.nav-box__list-link:hover, .nav-box__list-link:focus {
   color: #2196f3;
   text-decoration: none;
 }
-.nav-list__link--active {
+.nav-box__list-link--active {
   position: relative;
   color: #2196f3;
 }
-.nav-list__link--active::after {
+.nav-box__list-link--active::after {
   content: "";
   display: block;
   position: absolute;
@@ -146,8 +145,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact-links {
+.contact-box__links {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -169,11 +167,11 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-links:hover, .contact-links:focus {
+.contact-box__links:hover, .contact-box__links:focus {
   color: #2196f3;
   text-decoration: none;
 }
-.contact-links:hover > .contact-box__icon, .contact-links:focus > .contact-box__icon {
+.contact-box__links:hover > .contact-box__icon, .contact-box__links:focus > .contact-box__icon {
   fill: #2196f3;
 }
 
@@ -438,8 +436,7 @@ body {
   color: #ffffff;
   padding-bottom: 60px;
 }
-
-.footer-contacts {
+.contact-list__item {
   margin-bottom: 9px;
 }
 
